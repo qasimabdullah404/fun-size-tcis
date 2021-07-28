@@ -11,5 +11,10 @@ let andFun = (arr) => {
     return sum;
 }
 
+let funHello = (name) => {
+    return "Hello "+name+"!"
+}
+
 exports.fun = fun;
 exports.andFun = andFun;
+exports.funHello = funHello;

@@ -2,6 +2,7 @@ let x = require("../index");
 let expect = require("chai").expect;
 let assert = require('assert')
 
+// fun() tests
 describe("Testing when value is a string", function () {
   describe("#fun()", function () {
     it("Should pass as the value is a string", function () {
@@ -20,7 +21,7 @@ describe("Testing when value is not a string", function () {
   });
 });
  
- 
+ // andFun() Tests
 describe('Sum of Numbers tests', () => {
     describe('General tests for #andFun', () => {
         it('should be a function', () => {
@@ -65,4 +66,13 @@ describe('Sum of Numbers tests', () => {
             expect(x.andFun(['pesho','gosho'])).to.be.NaN;           
         });
     });
+});
+
+// funHello() Tests
+describe("Testing funHello", function () {
+  describe("#funHello()", function () {
+    it("Should return Hello Qasim!", function () {
+      expect(x.funHello("Qasim")).to.equal("Hello Qasim!");
+    });
+  });
 });
