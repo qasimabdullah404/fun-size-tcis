@@ -1,0 +1,15 @@
+os: linux
+dist: xenial
+language: node_js
+node_js:
+- lts/erbium
+script:
+- npm test
+#deploy:
+#  - provider: npm
+#    email: qasimabdullah404@gmail.com
+#    on:
+#      tags: true
+#      condition: $(node -e 'console.log(require("./package.json").version)')
+#        = ${TRAVIS_TAG}
+#    skip_cleanup: true

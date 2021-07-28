@@ -1,0 +1,22 @@
+{
+  "name": "fun-size-tcis",
+  "version": "1.0.0",
+  "description": "Super tiny package",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qasimabdullah404/fun-size-tcis.git"
+  },
+  "author": "Qasim Abdullah <qasimabdullah404@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qasimabdullah404/fun-size-tcis.git/issues"
+  },
+  "homepage": "https://github.com/qasimabdullah404/fun-size-tcis.git#readme",
+  "devDependencies": {
+    "mocha": "^9.0.3"
+  }
+}

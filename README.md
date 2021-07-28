@@ -1,0 +1,1 @@
+# Publishing NPM package on tags using Travis CI
