@@ -3,9 +3,6 @@ dist: xenial
 language: node_js
 node_js:
 - lts/erbium
-branches:
-  only:
-  - stable
 script:
 - npm test
 deploy:
@@ -13,6 +10,9 @@ deploy:
     email: qasimabdullah404@gmail.com
     on:
       tags: true
+      branches:
+        only:
+        - stable
       condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG}
     skip_cleanup: true
     api_key:
