@@ -5,7 +5,6 @@ node_js:
 - lts/erbium
 branches:
   only:
-  - master
   - stable
 script:
 - npm test
