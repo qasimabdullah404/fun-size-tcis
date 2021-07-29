@@ -10,9 +10,7 @@ deploy:
     email: qasimabdullah404@gmail.com
     on:
       tags: true
-      branches:
-        only:
-        - stable
+      all_branches: true
       condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG}
     skip_cleanup: true
     api_key:
