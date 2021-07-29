@@ -1,1 +1,1 @@
-# Publishing NPM package on tags using Travis CI
+# [Fun-Size Package](https://www.npmjs.com/package/fun-size-tcis)

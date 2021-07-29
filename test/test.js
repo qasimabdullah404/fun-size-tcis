@@ -85,3 +85,12 @@ describe("Testing justFun", function () {
     });
   });
 });
+
+// jFun() Tests
+describe("Testing jFun", function () {
+  describe("#jFun()", function () {
+    it("Should return This is just a super tiny package.", function () {
+      expect(x.jFun()).to.equal("This is just a super tiny package.");
+    });
+  });
+});
