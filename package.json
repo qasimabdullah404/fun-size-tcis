@@ -1,6 +1,6 @@
 {
   "name": "fun-size-tcis",
-  "version": "1.7.0",
+  "version": "1.6.0",
   "description": "Super tiny package",
   "main": "index.js",
   "scripts": {
