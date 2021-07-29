@@ -76,3 +76,12 @@ describe("Testing funHello", function () {
     });
   });
 });
+
+// justFun() Tests
+describe("Testing justFun", function () {
+  describe("#justFun()", function () {
+    it("Should return Super Tiny Package", function () {
+      expect(x.justFun()).to.equal("Super Tiny Package");
+    });
+  });
+});

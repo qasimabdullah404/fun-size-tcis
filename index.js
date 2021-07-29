@@ -15,6 +15,11 @@ let funHello = (name) => {
     return "Hello "+name+"!"
 }
 
+let justFun = () => {
+    return "Super Tiny Package"
+}
+
 exports.fun = fun;
 exports.andFun = andFun;
 exports.funHello = funHello;
+exports.justFun = justFun
