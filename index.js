@@ -19,12 +19,12 @@ let justFun = () => {
     return "Super Tiny Package"
 }
 
-/* let jFun = () => {
+let jFun = () => {
     return "This is just a super tiny package!"
-} */
+}
 
 exports.fun = fun;
 exports.andFun = andFun;
 exports.funHello = funHello;
 exports.justFun = justFun
-/* exports.jFun = jFun */
+exports.jFun = jFun
