@@ -10,7 +10,8 @@ deploy:
     email: qasimabdullah404@gmail.com
     on:
       tags: true
-      branch: /^\d+\.\d+\.\d+$/
+      branch: test
+      #branch: /^\d+\.\d+\.\d+$/
       #branches:
       #  only:
       #    - main
