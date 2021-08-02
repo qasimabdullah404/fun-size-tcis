@@ -18,7 +18,7 @@ deploy:
       #    - /^\d+\.\d+\.\d+$/
       all_branches: true
       #condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG}
-      condition: $TRAVIS_BRANCH =~ ^\d+\.\d+\.\d+$
+      condition: $TRAVIS_BRANCH =~ "^\d+\.\d+\.\d+$"
     skip_cleanup: true
     api_key:
       secure: MRx5KK9CHoiyMYGrFDkf997GdfdCAMSlvQFqGft4H2ZJQdV8OKHqrdrNbW3c/AJQ/H8mv9d0BMDtUHfRRI4wyAF4Xa8AfkjS6D/gu7ZnKjy8M+QOhiIg7UzKPICSeefvXPuASdJEKB/Oh/zhDi9SvRrzVCn9XvwyQ6gv09eaoTyi/UpUS7x9gbGbpmUGvlykBNWHBNfdLVnGTAL17k2u2ypOsJGgOxzgxmU+262wJWEGxiaeMyfcjVYxC8knN7crn3VmcoJJrAMZrZSWcpqW6CUNu+fFV8cy9AblKUK86Q3uSe2XNJyvoRLNNb9IsvpXpl3pyIgsZ3lr3SdLx8ekS3mOB8vKdzHzk31eYx4Vr61oXHJ2kuTOBqakg8+rvWbhPudmiL5iuyVPrU+IaiyWLYmD020KDYzMaB6/J6eBUR74V1Vz4sgPvJV/ovR6loIkOKsLiHgdXMG3bb7MW6ztMb+TuT/UG6H2kBBnsfxxvtV5MEwgtl27BFpaXKbgjvuwe7RNkneG/TseLGSfrmmjzyNSKnF2UtYY/0Aj5/U3M31EOwCPUfKRsCulW8UMG5lvBHmmhHW36+X6flyIAhXJGxQO5Ot3zI79ygFeXi348eGsVCS6Fvuy6RrKSgNabEZxmVpHXNr8bapR8/hZgi8bajI1dz49rJ6gb7wdkrjCLog=
