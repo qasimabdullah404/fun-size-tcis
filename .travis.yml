@@ -12,7 +12,7 @@ deploy:
     email: qasimabdullah404@gmail.com
     on:
       tags: if [[ $TRAVIS_TAG =~ /^\d+\.\d+\.\d+$/ ]]
-      #branch: /^\d+\.\d+\.\d+$/
+      branch: /^\d+\.\d+\.\d+$/
       #branches:
       #  only:
       #    - /^\d+\.\d+\.\d+$/
