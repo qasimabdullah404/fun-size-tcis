@@ -13,7 +13,7 @@ deploy:
     on:
       tags: true
       all_branches: true
-      condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG} AND ${TRAVIS_TAG} =~ ^\d+\.\d+\.\d+$
+      condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG} && ${TRAVIS_TAG} =~ ^\d+\.\d+\.\d+$
       #condition: ${TRAVIS_TAG} =~ /^\d+\.\d+\.\d+$/
     skip_cleanup: true
     api_key:
