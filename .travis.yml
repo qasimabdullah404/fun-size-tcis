@@ -9,9 +9,7 @@ deploy:
   - provider: npm
     email: qasimabdullah404@gmail.com
     on:
-      tags: true
-      branch: test
-      #branch: /^\d+\.\d+\.\d+$/
+      branch: /^\d+\.\d+\.\d+$/
       #branches:
       #  only:
       #    - main
