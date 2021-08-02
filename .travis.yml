@@ -4,6 +4,8 @@ language: node_js
 node_js:
 - lts/erbium
 script:
+- echo $TRAVIS_TAG
+- echo $TRAVIS_BRANCH
 - npm test
 deploy:
   - provider: npm
