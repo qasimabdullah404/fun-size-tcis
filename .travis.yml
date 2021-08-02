@@ -11,10 +11,11 @@ deploy:
   - provider: npm
     email: qasimabdullah404@gmail.com
     on:
+      tags: if [[ $TRAVIS_TAG =~ /^\d+\.\d+\.\d+$/ ]]
       #branch: /^\d+\.\d+\.\d+$/
-      branches:
-        only:
-          - /^\d+\.\d+\.\d+$/
+      #branches:
+      #  only:
+      #    - /^\d+\.\d+\.\d+$/
       #all_branches: true
       #condition: $(node -e 'console.log(require("./package.json").version)') = ${TRAVIS_TAG}
       #condition: $TRAVIS_BRANCH =~ /^\d+\.\d+\.\d+$/
