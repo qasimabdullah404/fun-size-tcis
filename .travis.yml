@@ -3,6 +3,9 @@ dist: xenial
 language: node_js
 node_js:
 - lts/erbium
+- node
+- lts/*
+- '10'
 script:
 - echo $TRAVIS_TAG
 - echo $TRAVIS_BRANCH
@@ -14,6 +17,7 @@ deploy:
       tags: true
       all_branches: true
       condition: $TRAVIS_TAG =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$
+      node: lts/erbium
       #condition: ${TRAVIS_TAG} =~ /^\d+\.\d+\.\d+$/
     skip_cleanup: true
     api_key:
