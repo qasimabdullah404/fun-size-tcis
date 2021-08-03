@@ -13,7 +13,7 @@ deploy:
     on:
       tags: true
       all_branches: true
-      condition: $TRAVIS_TAG =~ ^\\d+\\.\\d+\\.\\d+$
+      condition: $TRAVIS_TAG =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$
       #condition: ${TRAVIS_TAG} =~ /^\d+\.\d+\.\d+$/
     skip_cleanup: true
     api_key:
