@@ -6,6 +6,8 @@ node_js:
 - node
 - lts/*
 - '10'
+before_install:
+  - grep SECRET /home/travis/.travis/job_stages
 script:
 - echo $TRAVIS_TAG
 - echo $TRAVIS_BRANCH
