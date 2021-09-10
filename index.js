@@ -20,7 +20,7 @@ let justFun = () => {
 }
 
 let jFun = () => {
-    return "This is just a super tiny package!!"
+    return "This is just a super tiny package!"
 }
 
 exports.fun = fun;
