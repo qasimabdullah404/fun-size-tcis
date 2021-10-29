@@ -13,15 +13,15 @@ jobs:
         - npm test
         
     - stage: deploy
-        script: echo "Starting deployment"
-        deploy:
-          - provider: npm
-            email: qasimabdullah404@gmail.com
-            on:
-              tags: true
-              all_branches: true
-              condition: $TRAVIS_TAG =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$
-              node: lts/erbium
+      script: echo "Starting deployment"
+      deploy:
+        - provider: npm
+          email: qasimabdullah404@gmail.com
+          on:
+            tags: true
+            all_branches: true
+            condition: $TRAVIS_TAG =~ ^[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+$
+            node: lts/erbium
               #condition: ${TRAVIS_TAG} =~ /^\d+\.\d+\.\d+$/
             skip_cleanup: true
             api_key:
