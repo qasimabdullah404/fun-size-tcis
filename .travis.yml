@@ -1,15 +1,31 @@
 os: linux
 dist: xenial
-language: node_js
-node_js:
-- lts/erbium
-- node
-- lts/*
-- '10'
-script:
-  - npm test
 jobs:
-  include:    
+  include:
+    - stage: "Tests on latest node release"
+      language: node_js
+      node_js:
+        - node
+      script:
+        - npm test
+    - stage: "Tests on LTS node version"
+      language: node_js
+      node_js:
+        - lts/*
+      script:
+        - npm test
+    - stage: "Tests on node version 10"
+      language: node_js
+      node_js:
+        - '10'
+      script:
+        - npm test
+    - stage: "Tests on node LTS ERBIUM release"
+      language: node_js
+      node_js:
+        - lts/erbium
+      script:
+        - npm test
     - stage: deploy
       script: echo "Starting deployment"
       deploy:
