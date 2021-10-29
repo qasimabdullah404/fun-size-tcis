@@ -6,12 +6,10 @@ node_js:
 - node
 - lts/*
 - '10'
+script:
+  - npm test
 jobs:
-  include:
-    - stage: run tests
-      script:
-        - npm test
-        
+  include:    
     - stage: deploy
       script: echo "Starting deployment"
       deploy:
